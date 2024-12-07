@@ -1,0 +1,30 @@
+cd C:\
+mkdir git_practical_exam
+cd git_practical_exam
+git init
+git remote -v
+echo. > student_info.txt
+echo Name: Kristan Karl Jovero > student_info.txt
+echo Exam Date: December 07, 2024 >> student_info.txt
+git commit -m "Initial commit: Added student_info.txt"
+echo Favorite Git Command: git add . >> student_info.txt
+git commit -m "Updated student_info.txt with favorite Git command"
+git remote add origin https://github.com/KKJOVS/git_practical_exam.git
+git branch -M main
+git push -u origin main
+git branch feature--bio
+git branch -d feature--bio
+git branch feature-bio
+git checkout feature-bio
+echo. > bio.txt
+echo I am learning Git for version control." >> bio.txt
+echo I am learning Git for version control. >> bio.text
+echo About Me: > bio.txt
+git add bio.txt
+git commit -m "I added the bio.txt into feature-bio branch"
+git add .
+git commit -m " Resolving Problems "
+git checkout main
+git merge feature-bio
+git pull origin main
+doskey /history > finals.txt
