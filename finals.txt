@@ -22,9 +22,17 @@ echo I am learning Git for version control. >> bio.text
 echo About Me: > bio.txt
 git add bio.txt
 git commit -m "I added the bio.txt into feature-bio branch"
-git add .
 git commit -m " Resolving Problems "
 git checkout main
 git merge feature-bio
 git pull origin main
+echo I am learning Git for version control. >> bio.txt
+git add .
+git commit "Resolved the error"
+git commit -m "Resolved the error"
+rm bio.text
+del bio.text
+git add bio.text
+git commit -m "Deleting wrong file named bio.text."
+git push origin main
 doskey /history > finals.txt
